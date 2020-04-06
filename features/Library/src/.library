@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library xmlns="http://www.sap.com/sap.ui.library.xsd" >
+    <name>fop.template.library</name>
+    <vendor>featureCLI</vendor>
+    <version>0.1</version>
+    <documentation>UI5 library template by featureCLI</documentation>    
+    <dependencies></dependencies>
+    <appData></appData>
+</library>

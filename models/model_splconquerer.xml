@@ -1,0 +1,525 @@
+<plm canReuseInstance="true" name="TemplateGenerator">
+	    <element dynamic="false" id="2" name="Base" optional="false" type="feature">
+	        <path_absolut/>
+        <path_relativ/>
+        <constraints>
+            <constraint type="alternative"/>
+            <constraint type="commulative"/>
+            <constraint type="requires"/>
+            <constraint type="excludes"/>
+        </constraints>
+        <childElements/>
+        <order/>
+        <classes/>
+    </element>
+    <element dynamic="false" id="3" name="CodeBase" optional="false" type="feature">
+        <path_absolut/>
+        <path_relativ/>
+        <constraints>
+            <constraint type="alternative"/>
+            <constraint type="commulative"/>
+            <constraint type="requires"/>
+            <constraint type="excludes"/>
+        </constraints>
+        <childElements>
+            <child optional="false">
+                <id>4</id>
+            </child>
+            <child optional="false">
+                <id>21</id>
+            </child>
+        </childElements>
+        <order/>
+        <classes/>
+    </element>
+    <element dynamic="false" id="4" name="Application" optional="false" type="feature">
+        <path_absolut/>
+        <path_relativ/>
+        <parentElement>
+            <id>3</id>
+        </parentElement>
+        <constraints>
+            <constraint type="alternative">
+                <constraint_element>
+                    <id>21</id>
+                    <name>Library</name>
+                </constraint_element>
+            </constraint>
+            <constraint type="commulative"/>
+            <constraint type="requires"/>
+            <constraint type="excludes"/>
+        </constraints>
+        <childElements>
+            <child optional="false">
+                <id>5</id>
+            </child>
+            <child optional="false">
+                <id>9</id>
+            </child>
+            <child optional="true">
+                <id>15</id>
+            </child>
+            <child optional="true">
+                <id>18</id>
+            </child>
+        </childElements>
+        <order/>
+        <classes/>
+    </element>
+    <element dynamic="false" id="5" name="Layout" optional="false" type="feature">
+        <path_absolut/>
+        <path_relativ/>
+        <parentElement>
+            <id>4</id>
+        </parentElement>
+        <constraints>
+            <constraint type="alternative"/>
+            <constraint type="commulative"/>
+            <constraint type="requires"/>
+            <constraint type="excludes"/>
+        </constraints>
+        <childElements>
+            <child optional="false">
+                <id>6</id>
+            </child>
+            <child optional="false">
+                <id>7</id>
+            </child>
+            <child optional="false">
+                <id>8</id>
+            </child>
+        </childElements>
+        <order/>
+        <classes/>
+    </element>
+    <element dynamic="false" id="6" name="Single" optional="false" type="feature">
+        <path_absolut/>
+        <path_relativ/>
+        <parentElement>
+            <id>5</id>
+        </parentElement>
+        <constraints>
+            <constraint type="alternative">
+                <constraint_element>
+                    <id>7</id>
+                    <name>MasterDetail</name>
+                </constraint_element>
+                <constraint_element>
+                    <id>8</id>
+                    <name>FlexibleColumnLayout</name>
+                </constraint_element>
+            </constraint>
+            <constraint type="commulative"/>
+            <constraint type="requires"/>
+            <constraint type="excludes"/>
+        </constraints>
+        <childElements/>
+        <order/>
+        <classes/>
+    </element>
+    <element dynamic="false" id="7" name="MasterDetail" optional="false" type="feature">
+        <path_absolut/>
+        <path_relativ/>
+        <parentElement>
+            <id>5</id>
+        </parentElement>
+        <constraints>
+            <constraint type="alternative">
+                <constraint_element>
+                    <id>6</id>
+                    <name>Single</name>
+                </constraint_element>
+                <constraint_element>
+                    <id>8</id>
+                    <name>FlexibleColumnLayout</name>
+                </constraint_element>
+            </constraint>
+            <constraint type="commulative"/>
+            <constraint type="requires"/>
+            <constraint type="excludes"/>
+        </constraints>
+        <childElements/>
+        <order/>
+        <classes/>
+    </element>
+    <element dynamic="false" id="8" name="FlexibleColumnLayout" optional="false" type="feature">
+        <path_absolut/>
+        <path_relativ/>
+        <parentElement>
+            <id>5</id>
+        </parentElement>
+        <constraints>
+            <constraint type="alternative">
+                <constraint_element>
+                    <id>6</id>
+                    <name>Single</name>
+                </constraint_element>
+                <constraint_element>
+                    <id>7</id>
+                    <name>MasterDetail</name>
+                </constraint_element>
+            </constraint>
+            <constraint type="commulative"/>
+            <constraint type="requires"/>
+            <constraint type="excludes"/>
+        </constraints>
+        <childElements/>
+        <order/>
+        <classes/>
+    </element>
+    <element dynamic="false" id="9" name="FirstPage" optional="false" type="feature">
+        <path_absolut/>
+        <path_relativ/>
+        <parentElement>
+            <id>4</id>
+        </parentElement>
+        <constraints>
+            <constraint type="alternative"/>
+            <constraint type="commulative"/>
+            <constraint type="requires"/>
+            <constraint type="excludes"/>
+        </constraints>
+        <childElements>
+            <child optional="false">
+                <id>10</id>
+            </child>
+            <child optional="false">
+                <id>11</id>
+            </child>
+            <child optional="false">
+                <id>12</id>
+            </child>
+            <child optional="false">
+                <id>13</id>
+            </child>
+            <child optional="false">
+                <id>14</id>
+            </child>
+        </childElements>
+        <order/>
+        <classes/>
+    </element>
+    <element dynamic="false" id="10" name="FreeStyleFirst" optional="false" type="feature">
+        <path_absolut/>
+        <path_relativ/>
+        <parentElement>
+            <id>9</id>
+        </parentElement>
+        <constraints>
+            <constraint type="alternative">
+                <constraint_element>
+                    <id>11</id>
+                    <name>List</name>
+                </constraint_element>
+                <constraint_element>
+                    <id>12</id>
+                    <name>Table</name>
+                </constraint_element>
+                <constraint_element>
+                    <id>13</id>
+                    <name>WorkList</name>
+                </constraint_element>
+                <constraint_element>
+                    <id>14</id>
+                    <name>Toolpage</name>
+                </constraint_element>
+            </constraint>
+            <constraint type="commulative"/>
+            <constraint type="requires"/>
+            <constraint type="excludes"/>
+        </constraints>
+        <childElements/>
+        <order/>
+        <classes/>
+    </element>
+    <element dynamic="false" id="11" name="List" optional="false" type="feature">
+        <path_absolut/>
+        <path_relativ/>
+        <parentElement>
+            <id>9</id>
+        </parentElement>
+        <constraints>
+            <constraint type="alternative">
+                <constraint_element>
+                    <id>10</id>
+                    <name>FreeStyleFirst</name>
+                </constraint_element>
+                <constraint_element>
+                    <id>12</id>
+                    <name>Table</name>
+                </constraint_element>
+                <constraint_element>
+                    <id>13</id>
+                    <name>WorkList</name>
+                </constraint_element>
+                <constraint_element>
+                    <id>14</id>
+                    <name>Toolpage</name>
+                </constraint_element>
+            </constraint>
+            <constraint type="commulative"/>
+            <constraint type="requires"/>
+            <constraint type="excludes"/>
+        </constraints>
+        <childElements/>
+        <order/>
+        <classes/>
+    </element>
+    <element dynamic="false" id="12" name="Table" optional="false" type="feature">
+        <path_absolut/>
+        <path_relativ/>
+        <parentElement>
+            <id>9</id>
+        </parentElement>
+        <constraints>
+            <constraint type="alternative">
+                <constraint_element>
+                    <id>10</id>
+                    <name>FreeStyleFirst</name>
+                </constraint_element>
+                <constraint_element>
+                    <id>11</id>
+                    <name>List</name>
+                </constraint_element>
+                <constraint_element>
+                    <id>13</id>
+                    <name>WorkList</name>
+                </constraint_element>
+                <constraint_element>
+                    <id>14</id>
+                    <name>Toolpage</name>
+                </constraint_element>
+            </constraint>
+            <constraint type="commulative"/>
+            <constraint type="requires"/>
+            <constraint type="excludes"/>
+        </constraints>
+        <childElements/>
+        <order/>
+        <classes/>
+    </element>
+    <element dynamic="false" id="13" name="WorkList" optional="false" type="feature">
+        <path_absolut/>
+        <path_relativ/>
+        <parentElement>
+            <id>9</id>
+        </parentElement>
+        <constraints>
+            <constraint type="alternative">
+                <constraint_element>
+                    <id>10</id>
+                    <name>FreeStyleFirst</name>
+                </constraint_element>
+                <constraint_element>
+                    <id>11</id>
+                    <name>List</name>
+                </constraint_element>
+                <constraint_element>
+                    <id>12</id>
+                    <name>Table</name>
+                </constraint_element>
+                <constraint_element>
+                    <id>14</id>
+                    <name>Toolpage</name>
+                </constraint_element>
+            </constraint>
+            <constraint type="commulative"/>
+            <constraint type="requires"/>
+            <constraint type="excludes"/>
+        </constraints>
+        <childElements/>
+        <order/>
+        <classes/>
+    </element>
+    <element dynamic="false" id="14" name="Toolpage" optional="false" type="feature">
+        <path_absolut/>
+        <path_relativ/>
+        <parentElement>
+            <id>9</id>
+        </parentElement>
+        <constraints>
+            <constraint type="alternative">
+                <constraint_element>
+                    <id>10</id>
+                    <name>FreeStyleFirst</name>
+                </constraint_element>
+                <constraint_element>
+                    <id>11</id>
+                    <name>List</name>
+                </constraint_element>
+                <constraint_element>
+                    <id>12</id>
+                    <name>Table</name>
+                </constraint_element>
+                <constraint_element>
+                    <id>13</id>
+                    <name>WorkList</name>
+                </constraint_element>
+            </constraint>
+            <constraint type="commulative"/>
+            <constraint type="requires"/>
+            <constraint type="excludes"/>
+        </constraints>
+        <childElements/>
+        <order/>
+        <classes/>
+    </element>
+    <element dynamic="false" id="15" name="SecondPage" optional="true" type="feature">
+        <path_absolut/>
+        <path_relativ/>
+        <parentElement>
+            <id>4</id>
+        </parentElement>
+        <constraints>
+            <constraint type="alternative"/>
+            <constraint type="commulative"/>
+            <constraint type="requires"/>
+            <constraint type="excludes"/>
+        </constraints>
+        <childElements>
+            <child optional="false">
+                <id>16</id>
+            </child>
+            <child optional="false">
+                <id>17</id>
+            </child>
+        </childElements>
+        <order/>
+        <classes/>
+    </element>
+    <element dynamic="false" id="16" name="FreeStyleSecond" optional="false" type="feature">
+        <path_absolut/>
+        <path_relativ/>
+        <parentElement>
+            <id>15</id>
+        </parentElement>
+        <constraints>
+            <constraint type="alternative">
+                <constraint_element>
+                    <id>17</id>
+                    <name>ObjectpageSecond</name>
+                </constraint_element>
+            </constraint>
+            <constraint type="commulative"/>
+            <constraint type="requires"/>
+            <constraint type="excludes"/>
+        </constraints>
+        <childElements/>
+        <order/>
+        <classes/>
+    </element>
+    <element dynamic="false" id="17" name="ObjectpageSecond" optional="false" type="feature">
+        <path_absolut/>
+        <path_relativ/>
+        <parentElement>
+            <id>15</id>
+        </parentElement>
+        <constraints>
+            <constraint type="alternative">
+                <constraint_element>
+                    <id>16</id>
+                    <name>FreeStyleSecond</name>
+                </constraint_element>
+            </constraint>
+            <constraint type="commulative"/>
+            <constraint type="requires"/>
+            <constraint type="excludes"/>
+        </constraints>
+        <childElements/>
+        <order/>
+        <classes/>
+    </element>
+    <element dynamic="false" id="18" name="ThirdPage" optional="true" type="feature">
+        <path_absolut/>
+        <path_relativ/>
+        <parentElement>
+            <id>4</id>
+        </parentElement>
+        <constraints>
+            <constraint type="alternative"/>
+            <constraint type="commulative"/>
+            <constraint type="requires">
+                <constraint_element>
+                    <id>8</id>
+                    <name>FlexibleColumnLayout</name>
+                </constraint_element>
+            </constraint>
+            <constraint type="excludes"/>
+        </constraints>
+        <childElements>
+            <child optional="false">
+                <id>19</id>
+            </child>
+            <child optional="false">
+                <id>20</id>
+            </child>
+        </childElements>
+        <order/>
+        <classes/>
+    </element>
+    <element dynamic="false" id="19" name="FreeStyleThird" optional="false" type="feature">
+        <path_absolut/>
+        <path_relativ/>
+        <parentElement>
+            <id>18</id>
+        </parentElement>
+        <constraints>
+            <constraint type="alternative">
+                <constraint_element>
+                    <id>20</id>
+                    <name>ObjectpageThird</name>
+                </constraint_element>
+            </constraint>
+            <constraint type="commulative"/>
+            <constraint type="requires"/>
+            <constraint type="excludes"/>
+        </constraints>
+        <childElements/>
+        <order/>
+        <classes/>
+    </element>
+    <element dynamic="false" id="20" name="ObjectpageThird" optional="false" type="feature">
+        <path_absolut/>
+        <path_relativ/>
+        <parentElement>
+            <id>18</id>
+        </parentElement>
+        <constraints>
+            <constraint type="alternative">
+                <constraint_element>
+                    <id>19</id>
+                    <name>FreeStyleThird</name>
+                </constraint_element>
+            </constraint>
+            <constraint type="commulative"/>
+            <constraint type="requires"/>
+            <constraint type="excludes"/>
+        </constraints>
+        <childElements/>
+        <order/>
+        <classes/>
+    </element>
+    <element dynamic="false" id="21" name="Library" optional="false" type="feature">
+        <path_absolut/>
+        <path_relativ/>
+        <parentElement>
+            <id>3</id>
+        </parentElement>
+        <constraints>
+            <constraint type="alternative">
+                <constraint_element>
+                    <id>4</id>
+                    <name>Application</name>
+                </constraint_element>
+            </constraint>
+            <constraint type="commulative"/>
+            <constraint type="requires"/>
+            <constraint type="excludes"/>
+        </constraints>
+        <childElements/>
+        <order/>
+        <classes/>
+    </element>
+    <properties/>
+    <furtherConstraints/>
+</plm>

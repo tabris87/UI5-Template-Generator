@@ -1,0 +1,7 @@
+{
+    "sap.ui5": {
+        "rootView": {
+            "viewName": "fop.template.ui5.view.FirstPage"
+        }
+    }
+}

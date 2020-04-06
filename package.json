@@ -1,0 +1,36 @@
+{
+    "name": "splvortrag",
+    "version": "0.1.0",
+    "description": "template generator for ui5",
+    "main": "index.js",
+    "scripts": {},
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "featureCLI": "git+https://github.com/tabris87/featureJS.git",
+        "featurecli-commons": "git+https://github.com/tabris87/featureCLI-commons.git",
+        "featurecli-plugin-xml": "git+https://github.com/tabris87/featureCLI-plugin-xml.git",
+        "featurejs-plugin-ecma": "git+https://github.com/tabris87/featureCLI-plugin-ECMA.git",
+        "featurejs-plugin-json": "git+https://github.com/tabris87/featureJS-plugin-JSON.git"
+    },
+    "featureCLI": {
+        "buildFolder": "./template",
+        "projectFiles": "./features",
+        "configs": "./configurations",
+        "projectRules": "./customRules",
+        "plugins": [
+            {
+                "name": "featurecli-plugin-xml",
+                "config": {}
+            },
+            {
+                "name": "featurejs-plugin-json",
+                "config": {}
+            },
+            {
+                "name": "featurejs-plugin-ecma",
+                "config": {}
+            }
+        ]
+    }
+}

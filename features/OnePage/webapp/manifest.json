@@ -1,0 +1,19 @@
+{
+    "sap.ui5": {
+        "routing": {
+            "routes": [
+                {
+                    "pattern": "",
+                    "name": "first",
+                    "target": "firstPage"
+                }
+            ],
+            "targets": {
+                "firstPage": {
+                    "viewId": "FirstPage",
+                    "viewName": "FirstPage"
+                }
+            }
+        }
+    }
+}

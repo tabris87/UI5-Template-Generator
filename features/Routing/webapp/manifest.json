@@ -1,0 +1,17 @@
+{
+    "sap.ui5": {
+        "rootView": {
+            "viewName": "fop.template.ui5.view.App"
+        },
+        "routing": {
+            "config": {
+                "routerClass": "sap.m.routing.Router",
+                "viewType": "XML",
+                "viewPath": "fop.template.ui5.view",
+                "controlAggregation": "pages",
+                "controlId": "app",
+                "transition": "show"
+            }
+        }
+    }
+}
