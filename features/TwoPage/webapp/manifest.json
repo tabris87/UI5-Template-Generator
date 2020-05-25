@@ -1,0 +1,19 @@
+{
+    "sap.ui5": {
+        "routing": {
+            "routes": [
+                {
+                    "pattern": "second",
+                    "name": "second",
+                    "target": "secondPage"
+                }
+            ],
+            "targets": {
+                "secondPage": {
+                    "viewId": "SecondPage",
+                    "viewName": "SecondPage"
+                }
+            }
+        }
+    }
+}

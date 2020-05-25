@@ -6,29 +6,43 @@
 	:m CodeBase(CodeBase)
 		:g [1,1]
 			: Application(Application)
-				:m Layout(Layout)
+				:m Navigation(Navigation)
 					:g [1,1]
-						: Single(Single)
-						: MasterDetail(MasterDetail)
-						: FlexibleColumnLayout(FlexibleColumnLayout)
+						: Routing(Routing)
+							:g [1,1]
+								: Simple(Simple)
+									:m OnePage(OnePage)
+										:o TwoPage(TwoPage)
+											:o ThreePage(ThreePage)
+								: MasterDetail(MasterDetail)
+									:o WithEmptyDetail(WithEmptyDetail)
+								: FlexibleColumnLayout(FlexibleColumnLayout)
+									:g [1,1]
+										: TwoPageStartOne(TwoPageStartOne)
+										: MasterDetailType(MasterDetailType)
+						: NoRouting(NoRouting)
 				:m FirstPage(FirstPage)
-					:g [1,1]
-						: FreeStyleFirst(FreeStyleFirst)
-						: List(List)
-						: Table(Table)
-						: WorkList(WorkList)
-						: Toolpage(Toolpage)
+					:m FreeStyleFirst(FreeStyleFirst)
+						:o Pattern(Pattern)
+							:g [1,1]
+								: Table(Table)
+								: List(List)
+								: Worklist(Worklist)
+								: Toolpage(Toolpage)
 				:o SecondPage(SecondPage)
-					:g [1,1]
-						: FreeStyleSecond(FreeStyleSecond)
-						: ObjectpageSecond(ObjectpageSecond)
+					:m FreeStyleSecond(FreeStyleSecond)
+						:o ObjectPageSecond(ObjectPageSecond)
 				:o ThirdPage(ThirdPage)
-					:g [1,1]
-						: FreeStyleThird(FreeStyleThird)
-						: ObjectpageThird(ObjectpageThird)
+					:m FreeStyleThird(FreeStyleThird)
+						:o ObjectPageThird(ObjectPageThird)
 			: Library(Library)
 </feature_tree>
     <constraints>
-C1:~ThirdPage  or  FlexibleColumnLayout
+C1:~NoRouting  or  ~SecondPage
+C2:~NoRouting  or  ~ThirdPage
+C3:~TwoPage  or  SecondPage
+C4:~ThreePage  or  ThirdPage
+C5:~MasterDetail  or  FirstPage
+C6:~MasterDetail  or  SecondPage
 </constraints>
 </feature_model>

@@ -6,26 +6,45 @@
             <feature mandatory="true" name="Base"/>
             <alt abstract="true" mandatory="true" name="CodeBase">
                 <and name="Application">
-                    <alt abstract="true" mandatory="true" name="Layout">
-                        <feature name="Single"/>
-                        <feature name="MasterDetail"/>
-                        <feature name="FlexibleColumnLayout"/>
+                    <alt abstract="true" mandatory="true" name="Navigation">
+                        <alt name="Routing">
+                            <and abstract="true" name="Simple">
+                                <and mandatory="true" name="OnePage">
+                                    <and name="TwoPage">
+                                        <feature name="ThreePage"/>
+                                    </and>
+                                </and>
+                            </and>
+                            <and name="MasterDetail">
+                                <feature name="WithEmptyDetail"/>
+                            </and>
+                            <alt name="FlexibleColumnLayout">
+                                <feature name="TwoPageStartOne"/>
+                                <feature name="MasterDetailType"/>
+                            </alt>
+                        </alt>
+                        <feature name="NoRouting"/>
                     </alt>
-                    <alt abstract="true" mandatory="true" name="FirstPage">
-                        <feature name="FreeStyleFirst"/>
-                        <feature name="List"/>
-                        <feature name="Table"/>
-                        <feature name="WorkList"/>
-                        <feature name="Toolpage"/>
-                    </alt>
-                    <alt abstract="true" name="SecondPage">
-                        <feature name="FreeStyleSecond"/>
-                        <feature name="ObjectpageSecond"/>
-                    </alt>
-                    <alt abstract="true" name="ThirdPage">
-                        <feature name="FreeStyleThird"/>
-                        <feature name="ObjectpageThird"/>
-                    </alt>
+                    <and abstract="true" mandatory="true" name="FirstPage">
+                        <and mandatory="true" name="FreeStyleFirst">
+                            <alt abstract="true" name="Pattern">
+                                <feature name="Table"/>
+                                <feature name="List"/>
+                                <feature name="Worklist"/>
+                                <feature name="Toolpage"/>
+                            </alt>
+                        </and>
+                    </and>
+                    <and abstract="true" name="SecondPage">
+                        <and mandatory="true" name="FreeStyleSecond">
+                            <feature name="ObjectPageSecond"/>
+                        </and>
+                    </and>
+                    <and abstract="true" name="ThirdPage">
+                        <and mandatory="true" name="FreeStyleThird">
+                            <feature name="ObjectPageThird"/>
+                        </and>
+                    </and>
                 </and>
                 <feature name="Library"/>
             </alt>
@@ -33,9 +52,38 @@
     </struct>
     <constraints>
         <rule>
+            <description>
+Without routing we can not have a third or even a second page.
+</description>
             <imp>
+                <var>NoRouting</var>
+                <not>
+                    <disj>
+                        <var>SecondPage</var>
+                        <var>ThirdPage</var>
+                    </disj>
+                </not>
+            </imp>
+        </rule>
+        <rule>
+            <imp>
+                <var>TwoPage</var>
+                <var>SecondPage</var>
+            </imp>
+        </rule>
+        <rule>
+            <imp>
+                <var>ThreePage</var>
                 <var>ThirdPage</var>
-                <var>FlexibleColumnLayout</var>
+            </imp>
+        </rule>
+        <rule>
+            <imp>
+                <var>MasterDetail</var>
+                <conj>
+                    <var>FirstPage</var>
+                    <var>SecondPage</var>
+                </conj>
             </imp>
         </rule>
     </constraints>

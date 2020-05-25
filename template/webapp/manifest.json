@@ -30,15 +30,26 @@
                 "controlId": "app",
                 "transition": "show"
             },
-            "routes": [{
+            "routes": [
+                {
                     "pattern": "",
                     "name": "first",
                     "target": "firstPage"
-                }],
+                },
+                {
+                    "pattern": "second",
+                    "name": "second",
+                    "target": "secondPage"
+                }
+            ],
             "targets": {
                 "firstPage": {
                     "viewId": "FirstPage",
                     "viewName": "FirstPage"
+                },
+                "secondPage": {
+                    "viewId": "SecondPage",
+                    "viewName": "SecondPage"
                 }
             }
         }

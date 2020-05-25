@@ -1,0 +1,16 @@
+<mvc:View xmlns="sap.m">
+    <Table>
+        <columns>
+            <Column>
+                <Text text="Column"/>
+            </Column>
+        </columns>
+        <items>
+            <ColumnListItem>
+                <cells>
+                    <Text text="Text"/>
+                </cells>
+            </ColumnListItem>
+        </items>
+    </Table>
+</mvc:View>
