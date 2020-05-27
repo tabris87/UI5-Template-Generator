@@ -32,5 +32,8 @@
                 "config": {}
             }
         ]
+    },
+    "devDependencies": {
+        "xml-reader": "^2.4.3"
     }
 }
