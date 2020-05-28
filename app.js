@@ -288,10 +288,16 @@ class ModelRenderer {
 
     render() {
         if (this._linesDrawn !== 0) {
-            Array(this._linesDrawn).forEach(() => ModelRenderer.readline.clearLine())
+            process.stdout.moveCursor(0, -this._linesDrawn);
+            this._linesDrawn = 0;
+            /* Array(this._linesDrawn).forEach(() => ModelRenderer.readline.clearLine()) */
         }
         this._traverse(this._model);
     };
+
+    addAdditionalWritenLinesToClear(iNumber = 0) {
+        this._linesDrawn += iNumber;
+    }
 
     showLegend() {
         console.log('\n');
@@ -328,6 +334,7 @@ const questions = {
             } else if (answer === "2" || answer === "configure") {
                 renderer.showSelected(true);
                 renderer.render();
+                renderer.addAdditionalWritenLinesToClear(1);
                 rl.question(questions['ask'].text, questions['ask'].callback);
                 /* ask(); */
             } else {
@@ -344,14 +351,12 @@ const questions = {
             } else {
                 let marked = renderer.markFeatureSelected(answer);
                 if (marked) {
-                    rl.clearLine();
                     renderer.render();
                     rl.question(questions["ask"].text, questions["ask"].callback);
                     /* ask(); */
                 } else {
                     console.log("Sry the feature cannot be found! Did you misspelled it?");
-                    rl.clearLine();
-                    rl.clearLine();
+                    renderer.addAdditionalWritenLinesToClear(3);
                     rl.question(questions["ask"].text, questions["ask"].callback);
                     /* ask(); */
                 }
