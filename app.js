@@ -1,4 +1,6 @@
 const xmlReader = require('xml-reader');
+const colors = require('colors');
+
 const reader = xmlReader.create();
 
 const model = '<?xml version="1.0" encoding="UTF-8" standalone="no"?>' +
@@ -47,7 +49,9 @@ const model = '<?xml version="1.0" encoding="UTF-8" standalone="no"?>' +
     '    <featureOrder userDefined="false"/>' +
     '</featureModel>';
 
-function traverse(node, level, print) {
+const contains = (oObj, sAttribute, sDefault = "") => oObj[sAttribute] ? oObj[sAttribute] : sDefault;
+
+const traverse = (node, level, print) => {
     //startPrinting
     if (node.name === "struct") {
         node.children.forEach((subNode) => traverse(subNode, ++level, true));
@@ -55,7 +59,7 @@ function traverse(node, level, print) {
     }
 
     if (print) {
-        process.stdout.write(`Level ${level}: ${node.name}\n`);
+        process.stdout.write(`Level ${level}: ${node.name} -> ${contains(node.attributes, "name", "unnamed")}\n`);
         debugger;
     }
 
