@@ -1,4 +1,4 @@
-<mvc:View id="secondPage" xmlns:mvc="sap.ui.core.mvc" xmlns:f="sap.f" xmlns:uxap="sap.uxap" controllerName="fop.template.ui5.controller.SecondPage" displayBlock="true" height="100%">
+<mvc:View id="secondPage" xmlns:f="sap.f" xmlns:uxap="sap.uxap" height="100%">
     <f:DynamicPage id="dynamicPageId" headerExpanded="true" toggleHeaderOnTitleClick="true">
         <!-- DynamicPage Title -->
         <f:title>

@@ -26,30 +26,43 @@
                 "routerClass": "sap.m.routing.Router",
                 "viewType": "XML",
                 "viewPath": "fop.template.ui5.view",
-                "controlAggregation": "pages",
+                "controlAggregation": "masterPages",
                 "controlId": "app",
                 "transition": "show"
             },
             "routes": [
                 {
-                    "pattern": "",
-                    "name": "first",
-                    "target": "firstPage"
-                },
-                {
                     "pattern": "second",
                     "name": "second",
-                    "target": "secondPage"
+                    "target": [
+                        "firstPage",
+                        "secondPage"
+                    ]
+                },
+                {
+                    "pattern": "",
+                    "name": "first",
+                    "target": [
+                        "firstPage",
+                        "dummyDetail"
+                    ]
                 }
             ],
             "targets": {
                 "firstPage": {
                     "viewId": "FirstPage",
-                    "viewName": "FirstPage"
+                    "viewName": "FirstPage",
+                    "controlAggregation": "masterPages"
                 },
                 "secondPage": {
                     "viewId": "SecondPage",
-                    "viewName": "SecondPage"
+                    "viewName": "SecondPage",
+                    "controlAggregation": "detailPages"
+                },
+                "dummyDetail": {
+                    "viewId": "DummyDetail",
+                    "viewName": "DummyDetail",
+                    "controlAggregation": "detailPages"
                 }
             }
         }
