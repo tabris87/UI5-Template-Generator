@@ -3,15 +3,18 @@
     "version": "0.1.0",
     "description": "template generator for ui5",
     "main": "index.js",
+    "bin": "app.js",
     "scripts": {},
     "author": "",
     "license": "ISC",
     "dependencies": {
         "featureCLI": "git+https://github.com/tabris87/featureJS.git",
         "featurecli-commons": "git+https://github.com/tabris87/featureCLI-commons.git",
+        "featurecli-configurator": "git+https://github.com/tabris87/featureCLI-configurator.git",
         "featurecli-plugin-xml": "git+https://github.com/tabris87/featureCLI-plugin-xml.git",
         "featurejs-plugin-ecma": "git+https://github.com/tabris87/featureCLI-plugin-ECMA.git",
-        "featurejs-plugin-json": "git+https://github.com/tabris87/featureJS-plugin-JSON.git"
+        "featurejs-plugin-json": "git+https://github.com/tabris87/featureJS-plugin-JSON.git",
+        "inquirer": "^7.1.0"
     },
     "featureCLI": {
         "buildFolder": "./template",
@@ -32,9 +35,5 @@
                 "config": {}
             }
         ]
-    },
-    "devDependencies": {
-        "colors": "^1.4.0",
-        "xml-reader": "^2.4.3"
     }
 }
