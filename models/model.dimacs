@@ -1,0 +1,87 @@
+c 1 TemplateGenerator
+c 2 OnePage
+c 3 TwoPage
+c 4 ThreePage
+c 5 Simple
+c 6 SecondPage
+c 7 ObjectPageSecond
+c 8 Pattern
+c 9 Table
+c 10 List
+c 11 Worklist
+c 12 Toolpage
+c 13 Base
+c 14 CodeBase
+c 15 FirstPage
+c 16 Navigation
+c 17 Routing
+c 18 NoRouting
+c 19 MasterDetail
+c 20 FlexibleColumnLayout
+c 21 Application
+c 22 Library
+c 23 WithDummyDetail
+c 24 WithEmptyDetail
+c 25 TwoPageStartOne
+c 26 MasterDetailType
+c 27 ThirdPage
+c 28 ObjectPageThird
+p cnf 28 58
+1 0
+2 -3 0
+3 -4 0
+5 -2 0
+2 -5 0
+6 -7 0
+8 -9 0
+8 -10 0
+8 -11 0
+8 -12 0
+9 10 11 12 -8 0
+-9 -10 0
+-9 -11 0
+-9 -12 0
+-10 -11 0
+-10 -12 0
+-11 -12 0
+1 -13 0
+1 -14 0
+13 -1 0
+14 -1 0
+15 -8 0
+16 -17 0
+16 -18 0
+17 18 -16 0
+-17 -18 0
+17 -5 0
+17 -19 0
+17 -20 0
+5 19 20 -17 0
+-5 -19 0
+-5 -20 0
+-19 -20 0
+14 -21 0
+14 -22 0
+21 22 -14 0
+-21 -22 0
+19 -23 0
+19 -24 0
+23 24 -19 0
+-23 -24 0
+20 -25 0
+20 -26 0
+25 26 -20 0
+-25 -26 0
+27 -28 0
+21 -16 0
+21 -15 0
+21 -6 0
+21 -27 0
+16 -21 0
+15 -21 0
+-18 -6 0
+-18 -27 0
+-3 6 0
+-4 27 0
+-19 15 0
+-19 6 0

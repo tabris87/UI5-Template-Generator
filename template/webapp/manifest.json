@@ -1,0 +1,25 @@
+{
+    "sap.app": {
+        "id": "fop.template.ui5",
+        "type": "application"
+    },
+    "sap.ui5": {
+        "dependencies": {
+            "libs": {
+                "sap.ui.core": {},
+                "sap.m": {}
+            }
+        },
+        "rootView": {
+            "type": "XML",
+            "async": true,
+            "viewName": "fop.template.ui5.view.FirstPage"
+        },
+        "models": {
+            "i18n": {
+                "type": "sap.ui.model.resource.ResourceModel",
+                "settings": { "bundleName": "fop.template.ui5.i18n.i18n" }
+            }
+        }
+    }
+}
