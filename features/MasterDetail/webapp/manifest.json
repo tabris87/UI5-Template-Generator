@@ -1,0 +1,31 @@
+{
+    "sap.ui5": {
+        "routing": {
+            "config": {
+                "controlAggregation": "masterPages"
+            },
+            "routes": [
+                {
+                    "pattern": "second",
+                    "name": "second",
+                    "target": [
+                        "firstPage",
+                        "secondPage"
+                    ]
+                }
+            ],
+            "targets": {
+                "firstPage": {
+                    "viewId": "FirstPage",
+                    "viewName": "FirstPage",
+                    "controlAggregation": "masterPages"
+                },
+                "secondPage": {
+                    "viewId": "SecondPage",
+                    "viewName": "SecondPage",
+                    "controlAggregation": "detailPages"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "sap.ui5": {
+        "routing": {
+            "config": {
+                "controlAggregation": "masterPages"
+            },
+            "routes": [
+                {
+                    "pattern": "",
+                    "name": "first",
+                    "target": [
+                        "firstPage",
+                        "secondPage"
+                    ]
+                }
+            ]
+        }
+    }
+}

@@ -1,21 +1,20 @@
 const {
     Project
 } = require('featureCLI');
-
 const oProject = new Project({
     buildFolder: './template',
     projectFiles: './src',
-    "configs": [{
-            "name": "default",
-            "features": [
+    configs: [{
+            name: "default",
+            features: [
                 "Base",
                 "Single",
                 "FreeStyleFirst"
             ]
         },
         {
-            "name": "TwoPageFreestyle",
-            "features": [
+            name: "TwoPageFreestyle",
+            features: [
                 "Base",
                 "Single",
                 "FreeStyleFirst",
@@ -23,8 +22,8 @@ const oProject = new Project({
             ]
         },
         {
-            "name": "ThreePageFreestyle",
-            "features": [
+            name: "ThreePageFreestyle",
+            features: [
                 "Base",
                 "FlexibleColumnLayout",
                 "FreeStyleFirst",
@@ -35,11 +34,9 @@ const oProject = new Project({
     ],
     plugins: [{
         name: "featurecli-plugin-xml",
-        
+
         config: {}
     }]
 });
 
-
 oProject.build('default');
-debugger;

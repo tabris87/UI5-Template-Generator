@@ -1,17 +1,20 @@
 {
-    "name": "splvortrag",
-    "version": "0.1.0",
-    "description": "template generator for ui5",
+    "name": "UI5_Template_Generator",
+    "version": "0.2.0",
+    "description": "Template Generator for plain UI5 projects",
     "main": "index.js",
+    "bin": "app.js",
     "scripts": {},
-    "author": "",
+    "author": "Adrian Marten",
     "license": "ISC",
     "dependencies": {
         "featureCLI": "git+https://github.com/tabris87/featureJS.git",
         "featurecli-commons": "git+https://github.com/tabris87/featureCLI-commons.git",
+        "featurecli-configurator": "git+https://github.com/tabris87/featureCLI-configurator.git",
         "featurecli-plugin-xml": "git+https://github.com/tabris87/featureCLI-plugin-xml.git",
         "featurejs-plugin-ecma": "git+https://github.com/tabris87/featureCLI-plugin-ECMA.git",
-        "featurejs-plugin-json": "git+https://github.com/tabris87/featureJS-plugin-JSON.git"
+        "featurejs-plugin-json": "git+https://github.com/tabris87/featureJS-plugin-JSON.git",
+        "inquirer": "^7.1.0"
     },
     "featureCLI": {
         "buildFolder": "./template",

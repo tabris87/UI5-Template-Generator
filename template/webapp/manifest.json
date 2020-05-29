@@ -13,33 +13,12 @@
         "rootView": {
             "type": "XML",
             "async": true,
-            "viewName": "fop.template.ui5.view.App"
+            "viewName": "fop.template.ui5.view.FirstPage"
         },
         "models": {
             "i18n": {
                 "type": "sap.ui.model.resource.ResourceModel",
                 "settings": { "bundleName": "fop.template.ui5.i18n.i18n" }
-            }
-        },
-        "routing": {
-            "config": {
-                "routerClass": "sap.m.routing.Router",
-                "viewType": "XML",
-                "viewPath": "fop.template.ui5.view",
-                "controlAggregation": "pages",
-                "controlId": "app",
-                "transition": "show"
-            },
-            "routes": [{
-                    "pattern": "",
-                    "name": "first",
-                    "target": "firstPage"
-                }],
-            "targets": {
-                "firstPage": {
-                    "viewId": "FirstPage",
-                    "viewName": "FirstPage"
-                }
             }
         }
     }
