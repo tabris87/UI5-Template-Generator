@@ -1,11 +1,11 @@
 {
-    "name": "splvortrag",
+    "name": "UI5_Template_Generator",
     "version": "0.2.0",
-    "description": "template generator for ui5",
+    "description": "Template Generator for plain UI5 projects",
     "main": "index.js",
     "bin": "app.js",
     "scripts": {},
-    "author": "",
+    "author": "Adrian Marten",
     "license": "ISC",
     "dependencies": {
         "featureCLI": "git+https://github.com/tabris87/featureJS.git",
