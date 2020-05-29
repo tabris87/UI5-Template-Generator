@@ -1,2 +1,0 @@
-<mvc:View id="secondPage" xmlns:mvc="sap.ui.core.mvc" controllerName="fop.template.ui5.controller.SecondPage" displayBlock="true">
-</mvc:View>
