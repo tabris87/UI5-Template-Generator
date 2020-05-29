@@ -7,33 +7,5 @@
     "scripts": {},
     "author": "Adrian Marten",
     "license": "ISC",
-    "dependencies": {
-        "featureCLI": "git+https://github.com/tabris87/featureJS.git",
-        "featurecli-commons": "git+https://github.com/tabris87/featureCLI-commons.git",
-        "featurecli-configurator": "git+https://github.com/tabris87/featureCLI-configurator.git",
-        "featurecli-plugin-xml": "git+https://github.com/tabris87/featureCLI-plugin-xml.git",
-        "featurejs-plugin-ecma": "git+https://github.com/tabris87/featureCLI-plugin-ECMA.git",
-        "featurejs-plugin-json": "git+https://github.com/tabris87/featureJS-plugin-JSON.git",
-        "inquirer": "^7.1.0"
-    },
-    "featureCLI": {
-        "buildFolder": "./template",
-        "projectFiles": "./features",
-        "configs": "./configurations",
-        "projectRules": "./customRules",
-        "plugins": [
-            {
-                "name": "featurecli-plugin-xml",
-                "config": {}
-            },
-            {
-                "name": "featurejs-plugin-json",
-                "config": {}
-            },
-            {
-                "name": "featurejs-plugin-ecma",
-                "config": {}
-            }
-        ]
-    }
+    "dependencies": {}
 }
