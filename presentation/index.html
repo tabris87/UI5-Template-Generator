@@ -1,40 +1,287 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+    <title>Build, don't adapt!</title>
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+    <meta name="description" content="Build, don't adapt! – Towards a feature-oriented UI5 product line">
+    <meta name="author" content="Adrian Marten">
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/self.css">
+    <link rel="stylesheet" href="dist/theme/blood.css" id="theme">
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+</head>
+
+<body>
+    <div class="reveal">
+
+        <!-- Any section element inside of this container is displayed as a slide -->
+        <div class="slides">
+            <!-- Title slide -->
+            <section>
+                <!-- Create a nested slide stack for the title, to add my description -->
+                <!-- Title -->
+                <section>
+                    <h2 style="text-transform: capitalize;">Build, don't adapt!</h2>
+                    <img src="" alt="Build up logo!" style="height: 1rem; background: transparent;">
+                    <div>
+                        <h4 style="text-transform: capitalize;">Towards a feature-oriented</h4>
+                        <div style="display: flex; flex-direction: row; justify-content: center;">
+                            <img src="./assets/img/O_UI5_H.svg" style="max-height: 5rem;margin: -1.2rem 0 0 0;"
+                                alt="UI5 logo">
+                            <h4 style="text-transform: capitalize;">product line</h4>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="footer">
+                        <span>presented by: <strong>Adrian Marten</strong></span>
+                        <div>
+                            <span>powered by: </span>
+                            <a href="https://revealjs.com">
+                                <img src="https://static.slid.es/reveal/logo-v1/reveal-white-text.svg"
+                                    alt="reveal.js logo" style="background: transparent;" class="reveal-ico">
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Reference to me -->
+                <section>
+                    <h3>Adrian Marten</h3>
+                    <table border="1" style="border: 1px;">
+                        <tbody>
+                            <tr>
+                                <td width="25%" style="vertical-align: top;">
+                                    <img src="" alt="Picture of mine" style="margin: 0;">
+                                </td>
+                                <td style="vertical-align: top;">
+                                    <small>
+                                        <ul>
+                                            <li><strong>Developer</strong> @ msg systems ag</li>
+                                            <li>In the software industry for <strong> not so long </strong></li>
+                                            <br>
+                                            <li>
+                                                <strong>Javascript experience:</strong>
+                                                <ul>
+                                                    <li>Node.js: X years</li>
+                                                    <li>Front-End: X years</li>
+                                                    <li>SapUI5: X years</li>
+                                                </ul>
+                                            </li>
+                                            <br>
+                                        </ul>
+                                    </small>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" style="border: 0;">
+                                    <a href="" target="_blank" class="img-only">
+                                        <img src="" alt="linked-in">
+                                    </a>
+                                    <a href="" target="_blank" class="img-only">
+                                        <img src="" alt="github">
+                                    </a>
+                                    <a href="" target="_blank" class="img-only">
+                                        <img src="" alt="twitter">
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </section>
+
+            <!-- Agenda slide -->
+            <section>
+                <div style="display: flex; flex-direction: column; justify-content: center;">
+                    <strong style="font-size: 4rem;">Agenda</strong>
+                    <span>The Why</span>
+                    <span>The What</span>
+                    <span>The How</span>
+                    <br>
+                    <span>Does it work?</span>
+                </div>
+            </section>
+
+            <!-- First section "The Why"-->
+            <section>
+                <section>
+                    <h3 style="text-transform: capitalize;">The Why</h3>
+                </section>
+                <section>
+                    <h4 style="text-transform: capitalize;">University</h4>
+                    <p>
+                        A course of professor <a href="https://www.se.cs.uni-saarland.de/apel/">Sven
+                            Apel</a> called <br> <strong>Software-Product-Line Engineering</strong>.
+                    </p>
+                </section>
+                <section>
+                    <h4 style="text-transform: capitalize;">Former Projects</h4>
+                    <p>Different Apps with same code base for different user roles.</p>
+                    <p>Often led to copy code or complex reusable components.</p>
+                    <p>Runtime configurations drops performance.</p>
+                </section>
+                <section>
+                    <h4 style="text-transform: capitalize;">Performance</h4>
+                    <p>
+                        Using runtime configuration to <strong>adapt</strong> the behaviour leads often to
+                        a lot of conditional statements.
+                    </p>
+                    <p>
+                        Additionally it produces a lot of unnecessary code which won't be executed, but increases load
+                        times.
+                    </p>
+                </section>
+            </section>
+
+            <!-- Second section "The What"-->
+            <section>
+                <section>
+                    <h3 style="text-transform: capitalize;">The What</h3>
+                </section>
+                <section>
+                    <!-- Question 1 -->
+                    <h4 style="text-transform: capitalize;">
+                        What is a Product Line <strong>(PL)</strong>?
+                    </h4>
+                    <div class="grid">
+                        <div class="box fragment fade-up">
+                            <img src="" alt="Img Smartphones">
+                        </div>
+                        <div class="box fragment fade-up">
+                            <img src="" alt="Img Laptops">
+                        </div>
+                        <div class="box fragment fade-up">
+                            <img src="" alt="Img Router">
+                        </div>
+                        <div class="box fragment fade-up">
+                            <img src="" alt="Img Cars">
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h4 style="text-transform: capitalize;">
+                        What makes them a <strong>PL</strong>?
+                    </h4>
+
+                    <div class="grid">
+                        <div class="box part top-left fragment fade-up">
+                            <span style="margin: 3rem 0.5rem 0.5rem 2rem;">Designed for a
+                                <strong>Domain</strong>
+                            </span>
+                        </div>
+                        <div class="box part top-right fragment fade-up">
+                            <span style="margin: 3rem 2rem 0.5rem 0.5rem;">A Set of Shared
+                                <strong>Features</strong>
+                            </span>
+                        </div>
+                        <div class="box part bottom-left fragment fade-up">
+                            <span style="margin: 0.5rem 0.5rem 3rem 2rem;">A Set of
+                                <strong>Variants</strong>
+                            </span>
+                        </div>
+                        <div class="box part bottom-right fragment fade-up">
+                            <span style="margin: 0.5rem 3rem 3rem 2.5rem;">Reuse of
+                                <strong>Artefacts</strong>
+                            </span>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h4 style="text-transform: capitalize;">
+                        What makes a Software Product Line <strong>(SPL)</strong> different?
+                    </h4>
+                    <p style="font-size: 4rem; margin: 2rem 0 0 0;">Simply nothing!</p>
+                </section>
+                <section>
+                    <h4 style="text-transform: capitalize;">
+                        What can we use to create a <strong>SPL</strong>?
+                    </h4>
+                    <div style="display: flex;flex-direction: row;justify-content: space-evenly;">
+                        <div class="fragment">
+                            <h5 style="font-size: 1.5rem;">Current techniques</h5>
+                            <ul>
+                                <li class="fragment" style="font-size: 1.3rem;">Runtime-Variability</li>
+                                <li class="fragment" style="font-size: 1.3rem;">Version Control Systems</li>
+                                <li class="fragment" style="font-size: 1.3rem;">Build Systems</li>
+                                <li class="fragment" style="font-size: 1.3rem;">Preprocessors</li>
+                                <li class="fragment" style="font-size: 1.3rem;">Components</li>
+                                <li class="fragment" style="font-size: 1.3rem;">Frameworks</li>
+                            </ul>
+                        </div>
+                        <div class="fragment">
+                            <h5 style="font-size: 1.5rem;">Specific techniques</h5>
+                            <ul>
+                                <li class="fragment" style="font-size: 1.3rem;">(Fiori Elements Adaptions/Extensions)
+                                </li>
+                                <br>
+                                <li class="fragment" style="font-size: 1.3rem;">Aspect Oriented Programming</li>
+                                <li class="fragment" style="font-size: 1.3rem;">Delta Oriented Programming</li>
+                                <li class="fragment" style="font-size: 1.3rem;">
+                                    <strong>Feature Oriented Programming</strong>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </section>
+            </section>
+
+            <!-- Third section "The How"-->
+            <section>
+                <section>
+                    <h3 style="text-transform: capitalize;">The How</h3>
+                </section>
+                <section>
+                    <span>Explain Feature Models</span>
+                </section>
+                <section>
+                    <span>Explain Configuration/Variant</span>
+                </section>
+                <section>
+                    <span>Explain how to implement with FOP</span>
+                </section>
+            </section>
+
+            <!-- Fourth section "Does it work?"-->
+            <section>
+                <section>
+                    <h3 style="text-transform: capitalize;">Does it work?</h3>
+                </section>
+                <section>
+                    <span>Finally do some coding! 🥳</span>
+                </section>
+            </section>
+        </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+        // More info about initialization & config:
+        // - https://revealjs.com/initialization/
+        // - https://revealjs.com/config/
+        Reveal.initialize({
+            hash: true,
+            slideNumber: "c/t",
+            // Learn about plugins: https://revealjs.com/plugins/
+            plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+        });
+    </script>
+</body>
+
 </html>

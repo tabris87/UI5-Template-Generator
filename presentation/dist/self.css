@@ -1,0 +1,60 @@
+/*!
+* reveal.js 4.0.2
+* https://revealjs.com
+* MIT licensed
+*
+* Copyright (C) 2020 Hakim El Hattab, https://hakim.se
+*/
+strong {
+    color: #a01441
+}
+
+.footer {
+    font-size: large;
+    max-height: 1rem;
+}
+
+.grid {
+    margin: 1rem auto;
+    width: 45vh;
+    height: 45vh;
+    background-color: transparent;
+    display: grid;
+    grid-row: auto auto;
+    grid-template-columns: auto auto;
+    column-gap: 1vh;
+    row-gap: 1vh;
+}
+
+.grid .box {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box.part {
+    background: #ffffff17;
+    height: 20vh;
+    width: 20vh;
+}
+
+.top-left {
+    /*top-left, top-right, bottom-left, bottom-right*/
+    border-radius: 50% 0 0 0;
+}
+
+.top-right {
+    /*top-left, top-right, bottom-left, bottom-right*/
+    border-radius: 0 50% 0 0;
+}
+
+.bottom-left {
+    /*top-left, top-right, bottom-right, bottom-left*/
+    border-radius: 0 0 0 50%;
+}
+
+.bottom-right {
+    /*top-left, top-right, bottom-right, bottom-left*/
+    border-radius: 0 0 50% 0;
+}
