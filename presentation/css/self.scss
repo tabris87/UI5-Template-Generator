@@ -8,5 +8,8 @@ strong {
 
 .footer {
     font-size: large;
-    max-height: 1rem;
+    max-height: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }

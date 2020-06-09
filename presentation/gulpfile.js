@@ -303,11 +303,13 @@ gulp.task('serve', () => {
         livereload: true
     })
 
-    gulp.watch(['*.html', '*.md'], gulp.series('reload'))
+    gulp.watch(['*.html', '*.md'], gulp.series('reload'));
 
-    gulp.watch(['js/**'], gulp.series('js', 'reload', 'test'))
+    gulp.watch(['assets/**/*.svg', 'assets/**/*.png'], gulp.series('reload'));
 
-    gulp.watch(['plugin/**/plugin.js'], gulp.series('plugins', 'reload'))
+    gulp.watch(['js/**'], gulp.series('js', 'reload', 'test'));
+
+    gulp.watch(['plugin/**/plugin.js'], gulp.series('plugins', 'reload'));
 
     gulp.watch([
         'css/theme/source/*.{sass,scss}',
