@@ -1,8 +1,8 @@
 /*!
-* reveal.js 4.0.2
-* https://revealjs.com
+* reveal.js 0.2.0
+* undefined
 * MIT licensed
 *
 * Copyright (C) 2020 Hakim El Hattab, https://hakim.se
 */
-strong{color:#a01441}.footer{font-size:large;max-height:2rem;display:flex;flex-direction:row;justify-content:space-evenly}.grid{margin:1rem auto;width:45vh;height:45vh;background-color:transparent;display:grid;grid-row:auto auto;grid-template-columns:auto auto;column-gap:1vh;row-gap:1vh}.grid .box{padding:1rem;display:flex;align-items:center;justify-content:center}.box.part{background:#ffffff17;height:20vh;width:20vh}.top-left{border-radius:50% 0 0 0}.top-right{border-radius:0 50% 0 0}.bottom-left{border-radius:0 0 0 50%}.bottom-right{border-radius:0 0 50% 0}
+strong{color:#a01441}.footer{font-size:large;max-height:2rem;display:flex;flex-direction:row;justify-content:space-evenly}.grid{margin:1rem auto;width:45vh;height:45vh;background-color:transparent;display:grid;grid-row:auto auto;grid-template-columns:auto auto;column-gap:1vh;row-gap:1vh}.grid .box{padding:1rem;display:flex;align-items:center;justify-content:center}.box.part{background:#ffffff17;height:20vh;width:20vh}.top-left{border-radius:50% 0 0 0}.top-right{border-radius:0 50% 0 0}.bottom-left{border-radius:0 0 0 50%}.bottom-right{border-radius:0 0 50% 0}.box.circle{background:#ffffff17;height:20vh;width:20vh;border-radius:50% 50% 50% 50%}

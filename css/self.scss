@@ -58,3 +58,10 @@ strong {
     /*top-left, top-right, bottom-right, bottom-left*/
     border-radius: 0 0 50% 0;
 }
+
+.box.circle {    
+    background: #ffffff17;
+    height: 20vh;
+    width: 20vh;
+    border-radius: 50% 50% 50% 50%;
+}
