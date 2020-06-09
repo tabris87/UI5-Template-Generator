@@ -43,6 +43,15 @@
                 </and>
                 <feature name="Library"/>
             </alt>
+            <and name="ProjectSetup">
+                <and name="Grunt">
+                    <feature name="UI5Build"/>
+                    <feature name="Simple_Server_Grunt"/>
+                </and>
+                <and name="Gulp">
+                    <feature name="Simple_Server_Gulp"/>
+                </and>
+            </and>
         </and>
     </struct>
     <constraints>
