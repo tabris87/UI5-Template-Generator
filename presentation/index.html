@@ -58,6 +58,11 @@
                             </a>
                         </div>
                     </div>
+
+                    <aside class="notes">
+                        Hello everybody, thanks for listening to Build, don't adapt! Towards a feature oriented UI5
+                        product line.
+                    </aside>
                 </section>
 
                 <!-- Reference to me -->
@@ -134,12 +139,12 @@
                     <h4 style="text-transform: capitalize;">Former Projects</h4>
                     <p>Different Apps with same code base for different user roles.</p>
                     <p>Often led to copy code or complex reusable components.</p>
-                    <p>Runtime configurations drops performance.</p>
+                    <p>Runtime adaption drops performance.</p>
                 </section>
                 <section>
                     <h4 style="text-transform: capitalize;">Performance</h4>
                     <p>
-                        Using runtime configuration to <strong>adapt</strong> the behaviour leads often to
+                        Using runtime adaption to <strong>adapt</strong> the behaviour leads often to
                         a lot of conditional statements.
                     </p>
                     <p>
@@ -206,7 +211,7 @@
                     <h4 style="text-transform: capitalize;">
                         What makes a Software Product Line <strong>(SPL)</strong> different?
                     </h4>
-                    <p style="font-size: 4rem; margin: 2rem 0 0 0;">Nothing!</p>
+                    <p style="font-size: 4rem; margin: 2rem 0 0 0;" class="fragment">Nothing!</p>
                 </section>
                 <section>
                     <h4 style="text-transform: capitalize;">
@@ -291,7 +296,11 @@
             hash: true,
             slideNumber: "c/t",
             // Learn about plugins: https://revealjs.com/plugins/
-            plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+            plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+            dependencies: [{
+                src: 'node_modules/reveal.js-notes-pointer/notes-pointer.js',
+                async: true
+            }]
         });
     </script>
     <!-- Used to animate svgs by fragments -->

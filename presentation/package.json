@@ -94,5 +94,8 @@
       "no-eq-null": 2,
       "no-unused-expressions": 0
     }
+  },
+  "dependencies": {
+    "reveal.js-notes-pointer": "^0.1.4"
   }
 }

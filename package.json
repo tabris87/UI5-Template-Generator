@@ -7,5 +7,7 @@
     "scripts": {},
     "author": "Adrian Marten",
     "license": "ISC",
-    "dependencies": {}
+    "dependencies": {
+        "reveal.js-notes-pointer": "^0.1.4"
+    }
 }
