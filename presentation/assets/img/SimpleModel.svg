@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="190mm"
+   viewBox="0 0 210 190"
+   version="1.1"
+   id="svg44"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   sodipodi:docname="SimpleModel.svg">
+  <defs
+     id="defs38" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="304.54444"
+     inkscape:cy="559.78864"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:snap-text-baseline="true" />
+  <metadata
+     id="metadata41">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g971"
+       class="fragment"
+       transform="translate(10.961309,1.1339286)">
+      <rect
+         style="fill:#c6c6c6;fill-opacity:0.92941176;stroke:#00192e;stroke-width:0.26458332;stroke-opacity:1"
+         y="21.833328"
+         x="61.232147"
+         height="31.750002"
+         width="63.5"
+         id="rect46-0" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="80.130875"
+         y="42.072121"
+         id="text959"><tspan
+           sodipodi:role="line"
+           x="80.130875"
+           y="42.072121"
+           id="tspan957"
+           style="stroke-width:0.26458332"><tspan
+             x="80.130875"
+             y="42.072121"
+             id="tspan955"
+             style="stroke-width:0.26458332">SPL</tspan></tspan></text>
+    </g>
+    <g
+       id="g979"
+       class="fragment"
+       transform="translate(-13.229167,14.741071)">
+      <rect
+         style="fill:#9fe4ff;fill-opacity:0.92941176;stroke:#00192e;stroke-width:0.26458332;stroke-opacity:1"
+         y="81.553574"
+         x="16.630951"
+         height="31.750002"
+         width="63.5"
+         id="rect46" />
+      <path
+         inkscape:connection-end="#rect46"
+         inkscape:connector-curvature="0"
+         inkscape:connector-type="polyline"
+         id="path4591"
+         d="M 102.27958,39.976188 63.273993,81.553574"
+         style="fill:none;fill-rule:evenodd;stroke:#838383;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         inkscape:connection-start="#rect46-0" />
+      <ellipse
+         ry="4.201292"
+         rx="4.9572444"
+         cy="81.553574"
+         cx="64.180367"
+         id="path4602-44"
+         style="fill:#838383;fill-opacity:1;stroke:#080a0c;stroke-width:0.17747498;stroke-opacity:0.92990657" />
+      <text
+         id="text931"
+         y="100.70892"
+         x="33.359352"
+         style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="stroke-width:0.26458332"
+           id="tspan929"
+           y="100.70892"
+           x="33.359352"
+           sodipodi:role="line"><tspan
+             style="stroke-width:0.26458332"
+             id="tspan927"
+             y="100.70892"
+             x="33.359352">Base</tspan></tspan></text>
+    </g>
+    <g
+       id="g2184"
+       transform="translate(13.682731,-35.907733)"
+       class="fragment">
+      <rect
+         style="fill:#9ce3ff;fill-opacity:0.92941176;stroke:#00192e;stroke-width:0.26458332;stroke-opacity:1"
+         y="132.20238"
+         x="57.452389"
+         height="31.750002"
+         width="63.5"
+         id="rect46-1" />
+      <path
+         inkscape:connection-end="#rect46-1"
+         inkscape:connection-start="#g971"
+         inkscape:connector-curvature="0"
+         inkscape:connector-type="polyline"
+         id="path2174"
+         d="M 90.031601,90.624992 89.431513,132.20238"
+         style="fill:none;fill-rule:evenodd;stroke:#838383;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <ellipse
+         ry="4.201292"
+         rx="4.9572444"
+         cy="131.8244"
+         cx="89.202362"
+         id="path4602"
+         style="fill:#ffffff;fill-opacity:1;stroke:#080a0c;stroke-width:0.17747498;stroke-opacity:0.92941176" />
+      <text
+         transform="scale(1.0558494,0.94710476)"
+         id="text937"
+         y="160.26656"
+         x="57.30006"
+         style="font-style:normal;font-weight:normal;font-size:11.17440605px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.27936015"
+         xml:space="preserve"><tspan
+           style="stroke-width:0.27936015"
+           id="tspan935"
+           y="160.26656"
+           x="57.30006"
+           sodipodi:role="line"><tspan
+             style="stroke-width:0.27936015"
+             id="tspan933"
+             y="160.26656"
+             x="57.30006">Optional1</tspan></tspan></text>
+    </g>
+    <g
+       id="g2192"
+       transform="translate(0.52916667,-36.512517)"
+       class="fragment">
+      <rect
+         style="fill:#9ce3ff;fill-opacity:0.92941176;stroke:#00192e;stroke-width:0.26458332;stroke-opacity:1"
+         y="132.95833"
+         x="138.33928"
+         height="31.750002"
+         width="63.5"
+         id="rect46-03" />
+      <path
+         inkscape:connection-end="#rect46-03"
+         inkscape:connection-start="#g971"
+         inkscape:connector-curvature="0"
+         inkscape:connector-type="polyline"
+         id="path2176"
+         d="m 117.81938,91.229776 37.8648,41.728554"
+         style="fill:none;fill-rule:evenodd;stroke:#838383;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <ellipse
+         ry="4.201292"
+         rx="4.9572444"
+         cy="132.58035"
+         cx="153.45824"
+         id="path4602-5"
+         style="fill:#ffffff;fill-opacity:1;stroke:#080a0c;stroke-width:0.17747498;stroke-opacity:0.92941176" />
+      <text
+         transform="scale(1.0558494,0.94710476)"
+         id="text943"
+         y="160.86519"
+         x="135.44432"
+         style="font-style:normal;font-weight:normal;font-size:11.17440605px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.27936015"
+         xml:space="preserve"><tspan
+           style="stroke-width:0.27936015"
+           id="tspan941"
+           y="160.86519"
+           x="135.44432"
+           sodipodi:role="line"><tspan
+             style="stroke-width:0.27936015"
+             id="tspan939"
+             y="160.86519"
+             x="135.44432">Optional2</tspan></tspan></text>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#d7d7d7;fill-opacity:1;stroke:none;stroke-width:0.26458332;image-rendering:optimizeQuality"
+       x="58.207581"
+       y="154.81459"
+       id="text925"
+       class="fragment"><tspan
+         sodipodi:role="line"
+         x="58.207581"
+         y="154.81459"
+         id="tspan923"
+         style="stroke-width:0.26458332"><tspan
+           x="58.207581"
+           y="154.81459"
+           id="tspan921"
+           style="stroke-width:0.26458332">CTC 1: IF =&gt; That</tspan></tspan></text>
+  </g>
+</svg>
