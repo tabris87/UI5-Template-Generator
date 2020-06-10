@@ -24,13 +24,15 @@ c 23 MasterDetail
 c 24 FlexibleColumnLayout
 c 25 Application
 c 26 Library
-c 27 WithDummyDetail
-c 28 WithEmptyDetail
-c 29 TwoPageStartOne
-c 30 MasterDetailType
-c 31 ThirdPage
-c 32 ObjectPageThird
-p cnf 32 62
+c 27 Grunt_Build_Library
+c 28 Grunt_Build_Application
+c 29 WithDummyDetail
+c 30 WithEmptyDetail
+c 31 TwoPageStartOne
+c 32 MasterDetailType
+c 33 ThirdPage
+c 34 ObjectPageThird
+p cnf 34 68
 1 0
 2 -3 0
 3 -4 0
@@ -72,24 +74,30 @@ p cnf 32 62
 18 -26 0
 25 26 -18 0
 -25 -26 0
-23 -27 0
-23 -28 0
-27 28 -23 0
+6 -27 0
+6 -28 0
+27 28 -6 0
 -27 -28 0
-24 -29 0
-24 -30 0
-29 30 -24 0
+23 -29 0
+23 -30 0
+29 30 -23 0
 -29 -30 0
-31 -32 0
+24 -31 0
+24 -32 0
+31 32 -24 0
+-31 -32 0
+33 -34 0
 25 -20 0
 25 -19 0
 25 -9 0
-25 -31 0
+25 -33 0
 20 -25 0
 19 -25 0
 -22 -9 0
--22 -31 0
+-22 -33 0
 -3 9 0
--4 31 0
+-4 33 0
 -23 19 0
 -23 9 0
+-6 -25 28 0
+-6 -26 27 0

@@ -45,7 +45,10 @@
             </alt>
             <and name="ProjectSetup">
                 <and name="Grunt">
-                    <feature name="Grunt_Build"/>
+                    <alt name="Grunt_Build">
+                        <feature name="Grunt_Build_Library"/>
+                        <feature name="Grunt_Build_Application"/>
+                    </alt>
                     <feature name="Grunt_Server"/>
                 </and>
             </and>
@@ -85,6 +88,24 @@ Without routing we can not have a third or even a second page.
                     <var>FirstPage</var>
                     <var>SecondPage</var>
                 </conj>
+            </imp>
+        </rule>
+        <rule>
+            <imp>
+                <conj>
+                    <var>Grunt_Build</var>
+                    <var>Application</var>
+                </conj>
+                <var>Grunt_Build_Application</var>
+            </imp>
+        </rule>
+        <rule>
+            <imp>
+                <conj>
+                    <var>Grunt_Build</var>
+                    <var>Library</var>
+                </conj>
+                <var>Grunt_Build_Library</var>
             </imp>
         </rule>
     </constraints>
