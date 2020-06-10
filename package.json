@@ -8,11 +8,11 @@
     "author": "Adrian Marten",
     "license": "ISC",
     "dependencies": {
-        "featureCLI": "git+https://github.com/tabris87/featureJS.git",
+        "featureCLI": "git+https://github.com/tabris87/featureJS.git#dev",
         "featurecli-commons": "git+https://github.com/tabris87/featureCLI-commons.git",
         "featurecli-configurator": "git+https://github.com/tabris87/featureCLI-configurator.git",
         "featurecli-plugin-xml": "git+https://github.com/tabris87/featureCLI-plugin-xml.git",
-        "featurejs-plugin-ecma": "git+https://github.com/tabris87/featureCLI-plugin-ECMA.git",
+        "featurejs-plugin-ecma": "git+https://github.com/tabris87/featureCLI-plugin-ECMA.git#dev",
         "featurejs-plugin-json": "git+https://github.com/tabris87/featureJS-plugin-JSON.git",
         "inquirer": "^7.1.0"
     },
@@ -32,7 +32,13 @@
             },
             {
                 "name": "featurejs-plugin-ecma",
-                "config": {}
+                "config": {
+                    "parser": {
+                        "version": [
+                            "es6"
+                        ]
+                    }
+                }
             }
         ]
     }

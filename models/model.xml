@@ -45,11 +45,8 @@
             </alt>
             <and name="ProjectSetup">
                 <and name="Grunt">
-                    <feature name="UI5Build"/>
-                    <feature name="Simple_Server_Grunt"/>
-                </and>
-                <and name="Gulp">
-                    <feature name="Simple_Server_Gulp"/>
+                    <feature name="Grunt_Build"/>
+                    <feature name="Grunt_Server"/>
                 </and>
             </and>
         </and>
