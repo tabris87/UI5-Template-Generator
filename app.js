@@ -41,8 +41,8 @@ const build = sConfig => {
     try {
         oProject.build(sConfig);
     } catch (oError) {
-        debugger;
         console.log(oError.message);
+        console.log(oError.stack);
         process.exit(1);
     }
 }

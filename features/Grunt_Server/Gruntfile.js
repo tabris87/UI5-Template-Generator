@@ -1,7 +1,8 @@
-const serveStatic = require('serve-static');
+function setupConfig(grunt) {
+    original(grunt);
+    const serveStatic = require('serve-static');
 
-module.exports = function () {
-    grunt.initConfig({
+    grunt.config.merge({
         connect: {
             server: {
                 options: {
@@ -31,8 +32,16 @@ module.exports = function () {
             }
         }
     });
+}
+
+function loadNPMTasks(grunt) {
+    original(grunt);
     grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.loadNpmTasks('grunt-connect-proxy2');
     grunt.loadNpmTasks('grunt-contrib-watch');
+}
+
+function registerTasks(grunt) {
     grunt.registerTask('serve', ['configureProxies:server', 'connect:server', 'watch']);
+    original(grunt);
 }

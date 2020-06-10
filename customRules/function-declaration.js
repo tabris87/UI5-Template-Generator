@@ -18,15 +18,14 @@ const getOriginalCalls = function (featureFST) {
 }
 
 const rule = {
-    resolve: function (baseFST, featureFST, oContext) {
-        if (baseFST.type === "FunctionDeclaration") debugger;
-        var originals = getOriginalCalls(featureFST.value);
+    resolve: function (baseFST, featureFST) {
+        var originals = getOriginalCalls(featureFST);
         if (originals.length > 0) {
             // if original calls exists, add the baseFST function as new property
-
-            baseFST.key.name = baseFST.key.name + '_' + baseFST.featureName;
+            debugger;
+            baseFST.id.name = `${baseFST.name}_${baseFST.featureName}`;
             originals.forEach((node) => {
-                node.expression.callee.name = baseFST.key.name;
+                node.expression.callee.name = baseFST.id.name;
             });
         }
         featureFST.parent = baseFST.parent;
@@ -35,7 +34,7 @@ const rule = {
         return originals.length > 0 ? [baseFST, featureFST] : featureFST;
     },
     target: ['js', 'ecma'],
-    selector: 'Property[value="{type=FunctionExpression}"]'
+    selector: 'FunctionDeclaration'
 };
 
 module.exports = rule;
