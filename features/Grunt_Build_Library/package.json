@@ -1,0 +1,6 @@
+{
+    "devDependencies": {
+        "grunt-contrib-uglify": "*",
+        "grunt-contrib-copy": "*"
+    }
+}
