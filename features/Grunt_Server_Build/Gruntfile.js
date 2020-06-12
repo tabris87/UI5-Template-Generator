@@ -4,15 +4,15 @@ function setupConfig(grunt) {
 
     grunt.config.merge({
         connect: {
-            server: {
+            server_build: {
                 options: {
-                    base: 'webapp',
-                    directory: 'webapp',
-                    port: 8000,
+                    base: 'dist',
+                    directory: 'dist',
+                    port: 9000,
                     middleware: function (connect, options, defaultMiddleware) {
                         return [
                             require('grunt-connect-proxy2/lib/utils').proxyRequest,
-                            serveStatic('webapp'),
+                            serveStatic('dist'),
                             defaultMiddleware
                         ];
                     }
@@ -26,22 +26,15 @@ function setupConfig(grunt) {
             }
         },
         watch: {
-            server: {
-                files: ['webapp/**/*.*'],
+            server_build: {
+                files: ['dist/**/*.*'],
                 tasks: []
             }
         }
     });
 }
 
-function loadNPMTasks(grunt) {
-    original(grunt);
-    grunt.loadNpmTasks('grunt-contrib-connect');
-    grunt.loadNpmTasks('grunt-connect-proxy2');
-    grunt.loadNpmTasks('grunt-contrib-watch');
-}
-
 function registerTasks(grunt) {
-    grunt.registerTask('serve', ['configureProxies:server', 'connect:server', 'watch:server']);
+    grunt.registerTask('serve_build', ['configureProxies:server_build', 'connect:server_build', 'watch:server_build']);
     original(grunt);
 }

@@ -49,7 +49,9 @@
                         <feature name="Grunt_Build_Library"/>
                         <feature name="Grunt_Build_Application"/>
                     </alt>
-                    <feature name="Grunt_Server"/>
+                    <and name="Grunt_Server">
+                        <feature name="Grunt_Server_Build"/>
+                    </and>
                 </and>
             </and>
         </and>
@@ -106,6 +108,12 @@ Without routing we can not have a third or even a second page.
                     <var>Library</var>
                 </conj>
                 <var>Grunt_Build_Library</var>
+            </imp>
+        </rule>
+        <rule>
+            <imp>
+                <var>Grunt_Server_Build</var>
+                <var>Grunt_Build</var>
             </imp>
         </rule>
     </constraints>
