@@ -12,7 +12,7 @@ function setupConfig(grunt) {
                 options: {
                     rootPaths: ['src'],
                     library: {
-                        name: 'fop.template.library'
+                        name: '<fop.template.library>'
                     }
                 }
             }
@@ -22,7 +22,7 @@ function setupConfig(grunt) {
                 options: {
                     resources: {
                         cwd: 'src',
-                        prefix: 'fop.template.library',
+                        prefix: '<fop.template.library>',
                         src: [
                             '**/*.js'
                         ]

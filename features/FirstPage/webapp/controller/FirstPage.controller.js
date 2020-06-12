@@ -3,5 +3,5 @@ sap.ui.define([
 ], function (Controller) {
     'use strict';
 
-    return Controller.extend('fop.template.ui5.controller.FirstPage', {});
+    return Controller.extend('<fop.template.ui5>.controller.FirstPage', {});
 });

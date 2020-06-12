@@ -43,7 +43,7 @@
                 </and>
                 <feature name="Library"/>
             </alt>
-            <and name="ProjectSetup">
+            <alt name="ProjectSetup">
                 <and name="Grunt">
                     <alt name="Grunt_Build">
                         <feature name="Grunt_Build_Library"/>
@@ -53,7 +53,15 @@
                         <feature name="Grunt_Server_Build"/>
                     </and>
                 </and>
-            </and>
+                <and name="ui5Tooling">
+                    <and name="ui5Tooling_Server">
+                        <feature name="ui5Tooling_Server_Build"/>
+                    </and>
+                    <and name="ui5Tooling_Build">
+                        <feature mandatory="true" name="ui5Tooling_Build_Application"/>
+                    </and>
+                </and>
+            </alt>
         </and>
     </struct>
     <constraints>

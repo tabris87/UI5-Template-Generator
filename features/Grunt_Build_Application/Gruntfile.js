@@ -6,11 +6,11 @@ function setupConfig(grunt) {
                 options: {
                     resources: {
                         cwd: 'webapp',
-                        prefix: 'fop.template.ui5'
+                        prefix: '<fop.template.ui5>'
                     },
                     dest: 'dist'
                 },
-                components: 'fop.template.ui5'
+                components: '<fop.template.ui5>'
             }
         },
         cssmin: {

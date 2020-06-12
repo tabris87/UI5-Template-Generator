@@ -20,6 +20,9 @@ const build = sConfig => {
         configs: "./configurations",
         projectRules: "./customRules",
         plugins: [{
+                name: "featurecli-plugin-yaml",
+                config: {}
+            }, {
                 name: "featurecli-plugin-xml",
                 config: {}
             },

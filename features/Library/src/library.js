@@ -1,10 +1,10 @@
 sap.ui.define(
     [],
-    function ( /** @lends fop.template.library.prototype */ ) {
+    function ( /** @lends <fop.template.library>.prototype */ ) {
         "use strict";
 
         sap.ui.getCore().initLibrary({
-            name: "fop.template.library",
+            name: "<fop.template.library>",
             version: "0.1.0",
             dependencies: [],
             types: [],
@@ -13,7 +13,7 @@ sap.ui.define(
             elements: []
         });
 
-        return fop.template.library;
+        return <fop.template.library>;
     },
     /* bExport= */
     false

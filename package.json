@@ -12,6 +12,7 @@
         "featurecli-commons": "git+https://github.com/tabris87/featureCLI-commons.git",
         "featurecli-configurator": "git+https://github.com/tabris87/featureCLI-configurator.git",
         "featurecli-plugin-xml": "git+https://github.com/tabris87/featureCLI-plugin-xml.git",
+        "featurecli-plugin-yaml": "git+https://github.com/tabris87/featureCLI-plugin-YAML.git",
         "featurejs-plugin-ecma": "git+https://github.com/tabris87/featureCLI-plugin-ECMA.git#dev",
         "featurejs-plugin-json": "git+https://github.com/tabris87/featureJS-plugin-JSON.git",
         "inquirer": "^7.1.0"
@@ -22,6 +23,10 @@
         "configs": "./configurations",
         "projectRules": "./customRules",
         "plugins": [
+            {
+                "name": "featurecli-plugin-yaml",
+                "config": {}
+            },
             {
                 "name": "featurecli-plugin-xml",
                 "config": {}
