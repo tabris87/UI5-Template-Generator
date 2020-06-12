@@ -1,4 +1,7 @@
 {
+    "scripts": {
+        "build": "grunt build"
+    },
     "devDependencies": {
         "grunt-openui5": "*"
     }
