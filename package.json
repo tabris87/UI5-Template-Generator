@@ -1,12 +1,12 @@
 {
-    "name": "UI5_Template_Generator",
+    "name": "ui5_template_generator",
     "version": "0.2.0",
     "description": "Template Generator for plain UI5 projects",
     "main": "index.js",
     "bin": "app.js",
     "scripts": {},
     "author": "Adrian Marten",
-    "license": "ISC",
+    "license": "Apache-2.0",
     "dependencies": {
         "inquirer": "^7.1.0",
         "smithery": "^0.2.0",
@@ -14,7 +14,7 @@
         "smithery-equipment": "^0.1.5",
         "smithery-plugin-ecma": "^0.1.7",
         "smithery-plugin-json": "^0.1.0",
-        "smithery-plugin-xml": "^0.1.5"
+        "smithery-plugin-xml": "^0.1.5",
         "smithery-plugin-yaml": "^0.1.2"
     },
     "featureCLI": {
