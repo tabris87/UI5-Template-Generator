@@ -8,13 +8,13 @@
     "author": "Adrian Marten",
     "license": "ISC",
     "dependencies": {
-        "featureCLI": "git+https://github.com/tabris87/featureJS.git",
-        "featurecli-commons": "git+https://github.com/tabris87/featureCLI-commons.git",
-        "featurecli-configurator": "git+https://github.com/tabris87/featureCLI-configurator.git",
-        "featurecli-plugin-xml": "git+https://github.com/tabris87/featureCLI-plugin-xml.git",
-        "featurejs-plugin-ecma": "git+https://github.com/tabris87/featureCLI-plugin-ECMA.git",
-        "featurejs-plugin-json": "git+https://github.com/tabris87/featureJS-plugin-JSON.git",
-        "inquirer": "^7.1.0"
+        "inquirer": "^7.1.0",
+        "smithery": "^0.2.0",
+        "smithery-configurator": "^0.1.3",
+        "smithery-equipment": "^0.1.5",
+        "smithery-plugin-ecma": "^0.1.7",
+        "smithery-plugin-json": "^0.1.0",
+        "smithery-plugin-xml": "^0.1.5"
     },
     "featureCLI": {
         "buildFolder": "./template",
