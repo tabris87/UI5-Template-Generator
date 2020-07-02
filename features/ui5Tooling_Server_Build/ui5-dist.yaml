@@ -1,0 +1,34 @@
+specVersion: "2.0"
+metadata:
+  name: ui5_template_project
+type: application
+resources:
+  configuration:
+    paths:
+      webapp: dist
+framework:
+  name: OpenUI5
+  version: "1.77.1"
+  libraries:
+    - name: sap.m
+    - name: sap.ui.core
+    - name: sap.ui.layout
+    - name: themelib_sap_fiori_3
+server:
+  customMiddleware:
+  - name: ui5-middleware-livereload
+    afterMiddleware: compression
+    configuration:
+      port: 35729
+      path: dist
+  - name: ui5-middleware-simpleproxy
+    mountPath: /proxy
+    afterMiddleware: compression
+    configuration:
+      baseUri: "https://latest-openui5.rikosjett.com"
+    # PoC: reuse the same middleware at a different "mountPath"
+  - name: ui5-middleware-simpleproxy
+    mountPath: /proxy2
+    afterMiddleware: compression
+    configuration:
+      baseUri: "https://latest-openui5.rikosjett.com"

@@ -1,0 +1,7 @@
+{
+    "devDependencies": {
+        "grunt-contrib-uglify": "*",
+        "grunt-contrib-copy": "*",
+        "grunt-contrib-cssmin": "*"
+    }
+}

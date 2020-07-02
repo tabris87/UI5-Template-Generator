@@ -1,0 +1,6 @@
+{
+    "scripts": {
+        "build": "ui5 build self-contained --clean-dest"
+    },
+    "ui5": {}
+}

@@ -1,0 +1,5 @@
+{
+    "scripts": {
+        "start": "ui5 serve --config ui5-dist.yaml --port 1081 --open index.html"
+    }
+}

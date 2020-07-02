@@ -29,12 +29,25 @@ const build = sConfig => {
         },
         {
             name: "smithery-plugin-ecma",
-            config: {}
-        }
-        ]
+            config: {
+                parser: {
+                  version: "es6"
+                }
+            }
+        },
+        {
+          name: "smithery-plugin-yaml",
+          config: {}
+        }]
     });
 
-    oProject.build(sConfig);
+    try {
+        oProject.build(sConfig);
+    } catch (oError) {
+        console.log(oError.message);
+        console.log(oError.stack);
+        process.exit(1);
+    }
 }
 
 const configurator = () => {
@@ -48,10 +61,11 @@ fs.readdir('./configurations', (err, aFiles) => {
     if (err) {
         debugger;
     }
-    let bExistingsConfigs = aFiles.filter(name => name.endsWith('.config')).length > 0
+    let bExistingsConfigs = aFiles.filter(name => name.endsWith('.config')).length > 0;
     let aChoices = aFiles.filter(name => name.endsWith('.config')).map(name => name.replace('.config', ''));
-    aChoices.push(new inquirer.Separator())
+    aChoices.push(new inquirer.Separator());
     aChoices.push('Create New');
+    aChoices.push(new inquirer.Separator());
 
     if (bExistingsConfigs) {
         inquirer.prompt([{
