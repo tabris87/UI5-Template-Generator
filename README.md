@@ -10,4 +10,4 @@ Currently we have a model with **251** possible configurations
 - TwoPageRouting
 
 ## Starten
-C:\Users\martena\AppData\Roaming\npm\node_modules\featureCLI\bin\index.js
+C:\Users\martena\AppData\Roaming\npm\node_modules\smithery\bin\index.js

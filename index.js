@@ -1,39 +1,39 @@
 const {
     Project
-} = require('featureCLI');
+} = require('smithery');
 const oProject = new Project({
     buildFolder: './template',
     projectFiles: './src',
     configs: [{
-            name: "default",
-            features: [
-                "Base",
-                "Single",
-                "FreeStyleFirst"
-            ]
-        },
-        {
-            name: "TwoPageFreestyle",
-            features: [
-                "Base",
-                "Single",
-                "FreeStyleFirst",
-                "FreeStyleSecond"
-            ]
-        },
-        {
-            name: "ThreePageFreestyle",
-            features: [
-                "Base",
-                "FlexibleColumnLayout",
-                "FreeStyleFirst",
-                "FreeStyleSecond",
-                "FreeStyleThird"
-            ]
-        }
+        name: "default",
+        features: [
+            "Base",
+            "Single",
+            "FreeStyleFirst"
+        ]
+    },
+    {
+        name: "TwoPageFreestyle",
+        features: [
+            "Base",
+            "Single",
+            "FreeStyleFirst",
+            "FreeStyleSecond"
+        ]
+    },
+    {
+        name: "ThreePageFreestyle",
+        features: [
+            "Base",
+            "FlexibleColumnLayout",
+            "FreeStyleFirst",
+            "FreeStyleSecond",
+            "FreeStyleThird"
+        ]
+    }
     ],
     plugins: [{
-        name: "featurecli-plugin-xml",
+        name: "smithery-plugin-xml",
 
         config: {}
     }]

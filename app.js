@@ -11,34 +11,34 @@ const rl = readline.createInterface({
 
 const {
     Project
-} = require('featureCLI');
+} = require('smithery');
 
 const build = sConfig => {
     const oProject = new Project({
         buildFolder: "./template",
         projectFiles: "./features",
         configs: "./configurations",
-        projectRules: "./customRules",
+        //projectRules: "./customRules",
         plugins: [{
-                name: "featurecli-plugin-yaml",
-                config: {}
-            }, {
-                name: "featurecli-plugin-xml",
-                config: {}
-            },
-            {
-                name: "featurejs-plugin-json",
-                config: {}
-            },
-            {
-                name: "featurejs-plugin-ecma",
-                config: {
-                    parser: {
-                        version: "es6"
-                    }
+            name: "smithery-plugin-xml",
+            config: {}
+        },
+        {
+            name: "smithery-plugin-json",
+            config: {}
+        },
+        {
+            name: "smithery-plugin-ecma",
+            config: {
+                parser: {
+                  version: "es6"
                 }
             }
-        ]
+        },
+        {
+          name: "smithery-plugin-yaml",
+          config: {}
+        }]
     });
 
     try {
@@ -51,7 +51,7 @@ const build = sConfig => {
 }
 
 const configurator = () => {
-    let child = cp.spawn('npx', ["featureCLI-configurator", "configure", "./models/model.xml", "./configurations"], {
+    let child = cp.spawn('npx', ["smithery-configurator", "configure", "./models/model.xml", "./configurations"], {
         shell: true,
         stdio: [process.stdin, process.stdout, process.stderr]
     });
@@ -69,13 +69,13 @@ fs.readdir('./configurations', (err, aFiles) => {
 
     if (bExistingsConfigs) {
         inquirer.prompt([{
-                type: "list",
-                name: "config",
-                message: "Which configuration should be build?",
-                default: "Create New",
-                choices: aChoices,
+            type: "list",
+            name: "config",
+            message: "Which configuration should be build?",
+            default: "Create New",
+            choices: aChoices,
 
-            }])
+        }])
             .then(answers => {
                 if (answers.config !== "Create New") {
                     build(answers.config)
