@@ -33,7 +33,7 @@ const oProject = new Project({
     }
     ],
     plugins: [{
-        name: "featurecli-plugin-xml",
+        name: "smithery-plugin-xml",
 
         config: {}
     }]

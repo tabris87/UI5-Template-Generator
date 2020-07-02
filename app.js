@@ -20,15 +20,15 @@ const build = sConfig => {
         configs: "./configurations",
         //projectRules: "./customRules",
         plugins: [{
-            name: "featurecli-plugin-xml",
+            name: "smithery-plugin-xml",
             config: {}
         },
         {
-            name: "featurejs-plugin-json",
+            name: "smithery-plugin-json",
             config: {}
         },
         {
-            name: "featurejs-plugin-ecma",
+            name: "smithery-plugin-ecma",
             config: {}
         }
         ]
