@@ -1,0 +1,15 @@
+{
+    "scripts": {
+        "dev": "ui5 serve --port 1081 --open index.html"
+    },
+    "devDependencies": {
+        "ui5-middleware-livereload": "*",
+        "ui5-middleware-simpleproxy": "*"
+    },
+    "ui5": {
+        "dependencies": [
+            "ui5-middleware-livereload",
+            "ui5-middleware-simpleproxy"
+        ]
+    }
+}

@@ -1,6 +1,6 @@
 {
     "sap.app": {
-        "id": "fop.template.ui5",
+        "id": "<fop.template.ui5>",
         "type": "application"
     },
     "sap.ui5": {
@@ -18,7 +18,7 @@
             "i18n": {
                 "type": "sap.ui.model.resource.ResourceModel",
                 "settings": {
-                    "bundleName": "fop.template.ui5.i18n.i18n"
+                    "bundleName": "<fop.template.ui5>.i18n.i18n"
                 }
             }
         }

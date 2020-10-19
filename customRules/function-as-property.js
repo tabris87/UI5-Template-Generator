@@ -19,6 +19,7 @@ const getOriginalCalls = function (featureFST) {
 
 const rule = {
     resolve: function (baseFST, featureFST, oContext) {
+        if (baseFST.type === "FunctionDeclaration") debugger;
         var originals = getOriginalCalls(featureFST.value);
         if (originals.length > 0) {
             // if original calls exists, add the baseFST function as new property
@@ -26,11 +27,11 @@ const rule = {
             baseFST.key.name = baseFST.key.name + '_' + baseFST.featureName;
             originals.forEach((node) => {
                 node.expression.callee.name = baseFST.key.name;
-            });            
+            });
         }
         featureFST.parent = baseFST.parent;
         baseFST.featureName = featureFST.featureName;
-        
+
         return originals.length > 0 ? [baseFST, featureFST] : featureFST;
     },
     target: ['js', 'ecma'],

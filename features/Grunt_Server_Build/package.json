@@ -1,0 +1,5 @@
+{
+    "scripts": {
+        "start_build": "grunt serve_build"
+    }
+}

@@ -2,7 +2,7 @@
     "_version": "0.1.0",
     "sap.app": {
         "_version": "0.1.0",
-        "id": "fop.template.library",
+        "id": "<fop.template.library>",
         "type": "library"
     },
     "sap.ui": {

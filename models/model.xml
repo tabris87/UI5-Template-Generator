@@ -43,6 +43,25 @@
                 </and>
                 <feature name="Library"/>
             </alt>
+            <alt name="ProjectSetup">
+                <and name="Grunt">
+                    <alt name="Grunt_Build">
+                        <feature name="Grunt_Build_Library"/>
+                        <feature name="Grunt_Build_Application"/>
+                    </alt>
+                    <and name="Grunt_Server">
+                        <feature name="Grunt_Server_Build"/>
+                    </and>
+                </and>
+                <and name="ui5Tooling">
+                    <and name="ui5Tooling_Server">
+                        <feature name="ui5Tooling_Server_Build"/>
+                    </and>
+                    <and name="ui5Tooling_Build">
+                        <feature mandatory="true" name="ui5Tooling_Build_Application"/>
+                    </and>
+                </and>
+            </alt>
         </and>
     </struct>
     <constraints>
@@ -79,6 +98,30 @@ Without routing we can not have a third or even a second page.
                     <var>FirstPage</var>
                     <var>SecondPage</var>
                 </conj>
+            </imp>
+        </rule>
+        <rule>
+            <imp>
+                <conj>
+                    <var>Grunt_Build</var>
+                    <var>Application</var>
+                </conj>
+                <var>Grunt_Build_Application</var>
+            </imp>
+        </rule>
+        <rule>
+            <imp>
+                <conj>
+                    <var>Grunt_Build</var>
+                    <var>Library</var>
+                </conj>
+                <var>Grunt_Build_Library</var>
+            </imp>
+        </rule>
+        <rule>
+            <imp>
+                <var>Grunt_Server_Build</var>
+                <var>Grunt_Build</var>
             </imp>
         </rule>
     </constraints>

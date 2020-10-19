@@ -1,20 +1,24 @@
 {
-    "name": "UI5_Template_Generator",
+    "name": "ui5_template_generator",
     "version": "0.2.0",
     "description": "Template Generator for plain UI5 projects",
     "main": "index.js",
     "bin": "app.js",
-    "scripts": {},
+    "scripts": {
+        "create-config": "npx smith-config",
+        "build-template": "node app.js"
+    },
     "author": "Adrian Marten",
-    "license": "ISC",
+    "license": "Apache-2.0",
     "dependencies": {
-        "featureCLI": "git+https://github.com/tabris87/featureJS.git",
-        "featurecli-commons": "git+https://github.com/tabris87/featureCLI-commons.git",
-        "featurecli-configurator": "git+https://github.com/tabris87/featureCLI-configurator.git",
-        "featurecli-plugin-xml": "git+https://github.com/tabris87/featureCLI-plugin-xml.git",
-        "featurejs-plugin-ecma": "git+https://github.com/tabris87/featureCLI-plugin-ECMA.git",
-        "featurejs-plugin-json": "git+https://github.com/tabris87/featureJS-plugin-JSON.git",
-        "inquirer": "^7.1.0"
+        "inquirer": "^7.1.0",
+        "smithery": "^0.2.0",
+        "smithery-configurator": "^0.1.4",
+        "smithery-equipment": "^0.1.5",
+        "smithery-plugin-ecma": "^0.1.7",
+        "smithery-plugin-json": "^0.1.0",
+        "smithery-plugin-xml": "^0.1.5",
+        "smithery-plugin-yaml": "^0.1.3"
     },
     "featureCLI": {
         "buildFolder": "./template",
@@ -23,16 +27,26 @@
         "projectRules": "./customRules",
         "plugins": [
             {
-                "name": "featurecli-plugin-xml",
+                "name": "smithery-plugin-yaml",
                 "config": {}
             },
             {
-                "name": "featurejs-plugin-json",
+                "name": "smithery-plugin-xml",
                 "config": {}
             },
             {
-                "name": "featurejs-plugin-ecma",
+                "name": "smithery-plugin-json",
                 "config": {}
+            },
+            {
+                "name": "smithery-plugin-ecma",
+                "config": {
+                    "parser": {
+                        "version": [
+                            "es6"
+                        ]
+                    }
+                }
             }
         ]
     }
